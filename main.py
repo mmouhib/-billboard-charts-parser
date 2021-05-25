@@ -1,5 +1,7 @@
-import songsAndArtists
+import songsAndAlbums
+import artists
 import json
+
 # todo export results to JSON and Excel files
 songs_url = 'https://www.billboard.com/charts/billboard-global-200'
 albums_url = 'https://www.billboard.com/charts/billboard-200'
@@ -15,7 +17,7 @@ while 1:
         if 0 < int(choice) < 4:
             break
 
-data = songsAndArtists.charlist(artists_url)
+data = songsAndAlbums.charlist(artists_url)
 
 for i in data:
     print(i.rank)
