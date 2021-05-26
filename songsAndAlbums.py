@@ -13,6 +13,14 @@ class Data:
         self.url = url
 
 
+"""
+    songs_url = 'https://www.billboard.com/charts/billboard-global-200'
+    albums_url = 'https://www.billboard.com/charts/billboard-200'
+    
+    Replace the function parameter (url) by one of the upper
+    
+"""
+
 def charlist(url):
     page = requests.get(url)
     src = page.content
